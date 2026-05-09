@@ -1,0 +1,20 @@
+{
+  "name": "Zyvox Automations",
+  "short_name": "Zyvox",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8fc",
+  "theme_color": "#081a3a",
+  "icons": [
+    {
+      "src": "/images/logo_without_background.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo_without_background.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
