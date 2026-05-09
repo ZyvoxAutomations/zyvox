@@ -9,7 +9,6 @@ import marqueeN8n from "../../images/n8n.png";
 import marqueeOpenAi from "../../images/OpenAi.png";
 import marqueePlivo from "../../images/plivo.png";
 import marqueeRetell from "../../images/Retell.png";
-import demoVideo from "../../images/demo video.mp4";
 
 /** Odd-index homepage cards use navy hover top sweep; even use gold (default). */
 const homeCardToplineNavyClass = (globalIndex: number) =>
@@ -204,66 +203,6 @@ const HeroSection = () => (
   </section>
 );
 
-/* ─────────────────────────────────────────────
-   Section II: Product film / video spotlight
-   ───────────────────────────────────────────── */
-const VideoSpotlightSection = () => (
-  <section className="relative overflow-hidden bg-[#F9FAFB]">
-    <div className="pointer-events-none absolute inset-0">
-      <div className="absolute -right-40 top-1/4 h-[520px] w-[520px] rounded-full bg-gradient-to-bl from-[#D4AF37]/[0.12] to-transparent blur-3xl" />
-      <div className="absolute -left-32 bottom-0 h-[420px] w-[420px] rounded-full bg-gradient-to-tr from-[#001F3F]/[0.06] to-transparent blur-3xl" />
-    </div>
-    <div className="relative mx-auto max-w-[1440px] px-6 py-20 sm:px-8 sm:py-24 lg:py-28">
-      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.22fr)] lg:gap-14 xl:gap-16">
-        <div className="order-2 max-w-xl lg:order-1">
-          <Reveal>
-            <p className="mb-5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
-              See the platform in motion
-            </p>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h2 className="font-serif text-3xl font-bold leading-[1.12] text-[#001F3F] sm:text-4xl md:text-[2.65rem]">
-              From strategy sessions to{" "}
-              <span className="italic text-[#D4AF37]">live workflows</span>{" "}
-              in minutes
-            </h2>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <p className="mt-5 text-base leading-relaxed text-[#001F3F]/55 sm:text-lg">
-              A short walkthrough of how sovereign AI, voice agents, and
-              operational automation come together on one stack — built for
-              enterprises that need reliability at population scale.
-            </p>
-          </Reveal>
-          <Reveal delay={0.22}>
-            <p className="mt-6 font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-[#001F3F]/35">
-              Replace placeholder with your embed or hosted film
-            </p>
-          </Reveal>
-        </div>
-
-        <Reveal delay={0.12} direction="right" className="order-1 lg:order-2">
-          <figure className="relative mx-auto w-full max-w-[920px] lg:mx-0 lg:max-w-none">
-            <div className="relative overflow-hidden rounded-3xl border border-[#001F3F]/[0.08] bg-white shadow-diffused-lg">
-              <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-tr from-[#D4AF37]/[0.06] via-transparent to-transparent" />
-              <video
-                src={demoVideo}
-                className="aspect-video w-full object-cover"
-                autoPlay
-                controls
-                loop
-                playsInline
-              />
-            </div>
-            <figcaption className="sr-only">
-              Video placeholder — swap this image for your hero film or embed.
-            </figcaption>
-          </figure>
-        </Reveal>
-      </div>
-    </div>
-  </section>
-);
 
 /* ─────────────────────────────────────────────
    Section III: Moving Marquee — Tech Stack
@@ -686,7 +625,7 @@ const CTASection = () => (
       <Reveal>
         <div className="mx-auto max-w-3xl text-center">
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center">
-            <img src="/images/favicon.png" alt="Zyvox" className="h-full w-full object-contain scale-[1.25] mix-blend-multiply" />
+            <img src="/images/logo.png" alt="Zyvox Automations" className="h-full w-full object-contain scale-[1.25] mix-blend-multiply" />
           </div>
           <h2 className="font-serif text-3xl font-bold text-[#001F3F] sm:text-4xl md:text-5xl">
             Ready to build infrastructure that scales?
@@ -747,7 +686,6 @@ const Home = () => {
   return (
     <div className="bg-white">
       <HeroSection />
-      <VideoSpotlightSection />
       <TechMarquee />
       <PillarsSection />
       <AIFirstFutureSection />

@@ -52,7 +52,7 @@ const SiteShell = () => {
         className="sticky top-0 z-50 glass-nav"
         animate={{ y: navHidden ? "-100%" : "0%" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}>
-        <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-center md:justify-between px-6 sm:px-8 md:h-20 relative">
+        <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 sm:px-8 md:h-20 relative">
           <NavLink to="/" className="flex items-center" onClick={() => setOpen(false)}>
             <div className="flex h-10 w-44 items-center justify-center rounded-md sm:h-12 sm:w-56 md:h-14 md:w-72">
               <img src="/images/logo.png" alt="Zyvox Automations" className="h-full w-full object-contain scale-[1.35] origin-center mix-blend-multiply" />
