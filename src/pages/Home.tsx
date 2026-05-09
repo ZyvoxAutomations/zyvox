@@ -625,7 +625,7 @@ const CTASection = () => (
       <Reveal>
         <div className="mx-auto max-w-3xl text-center">
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center">
-            <img src="/images/logo.png" alt="Zyvox Automations" className="h-full w-full object-contain scale-[1.25] mix-blend-multiply" />
+            <img src="/images/favicon.png" alt="Zyvox Automations" className="h-full w-full object-contain scale-[1.25] mix-blend-multiply" />
           </div>
           <h2 className="font-serif text-3xl font-bold text-[#001F3F] sm:text-4xl md:text-5xl">
             Ready to build infrastructure that scales?
