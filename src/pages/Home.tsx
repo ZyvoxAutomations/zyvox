@@ -91,7 +91,7 @@ const HeroSection = () => (
               visible: { transition: { staggerChildren: 0.07, delayChildren: 0.1 } },
             }}
           >
-            {["Automation ", "for ", "the ", "next ", "generation ", "of "].map((w) => (
+            {["Automation\u00a0", "for\u00a0", "the\u00a0", "next\u00a0", "generation\u00a0", "of\u00a0"].map((w) => (
               <motion.span
                 key={w}
                 className="inline-block"
@@ -104,7 +104,7 @@ const HeroSection = () => (
               </motion.span>
             ))}
             <span className="relative inline-block">
-              {["industry ", "leaders"].map((w) => (
+              {["industry\u00a0", "leaders"].map((w) => (
                 <motion.span
                   key={w}
                   className="inline-block"
